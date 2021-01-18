@@ -1,9 +1,10 @@
 import React from 'react';
+import './LoginScreenStyle.css'
 
 const LoginScreen = () => {
     
     return (
-        <div>
+        <div className='headerBox'>
             <div className='typewriter'>
             <h1 className='loginScreenHeader'>
                 Use ML to segment your music.
@@ -11,7 +12,7 @@ const LoginScreen = () => {
             </div>
             <div>
                 <button 
-                    className="glow-on-hover" 
+                    className="loginButton" 
                     type="button" 
                     onClick={() => window.location = 'http://localhost:8888/login'}
                 >Login</button>
@@ -20,5 +21,5 @@ const LoginScreen = () => {
     )
 }
 
-// export default LoginScreen;
+export default LoginScreen;
 

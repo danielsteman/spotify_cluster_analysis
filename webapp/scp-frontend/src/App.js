@@ -1,8 +1,7 @@
 import './App.css'
 import queryString from 'query-string'
 import React, { useState, useEffect } from 'react'
-// import LoginScreen from './components/LoginScreen'
-import LoginScreen from './components/LoginScreenTest'
+import LoginScreen from './components/LoginScreen'
 import PlaylistGrid from './components/PlaylistGrid'
 
 const App = () => {

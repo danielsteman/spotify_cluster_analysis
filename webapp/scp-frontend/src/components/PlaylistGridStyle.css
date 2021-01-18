@@ -1,25 +1,55 @@
-h1 {
+.playlistGridHeader {
+    position: fixed;
     color: white;
+    top: 20%;
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%);
+    left: 5%;
+    font-family: 'Mulish', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
-h2 {
-    color: white;
-}
-
-p {
-    color: white;
-}
-
-/* .list {
+.list {
     display: flex;
-    padding: 20px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     overflow-x: scroll;
+    list-style: none
 }
 
 .item {
     height: 250px;
     width: 250px;
-    flex-shrink: 0;
+    position: relative;
 }
 
-.item:not(:last-child) { margin-right: 10px; } */
+.item:not(:last-child) { margin-right: 10px; }
+
+.description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(128, 128, 128, 0.5);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+
+.item:hover .description {
+    visibility: visible;
+    opacity: 1;
+  }
