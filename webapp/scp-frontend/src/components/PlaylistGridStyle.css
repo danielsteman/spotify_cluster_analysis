@@ -1,0 +1,25 @@
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+/* .list {
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+}
+
+.item {
+    height: 250px;
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.item:not(:last-child) { margin-right: 10px; } */
